@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div id="TimoviContainer"></div>
+@section scripts{
+
+    <script type="text/javascript">
+
+    $(document).ready(function () {
+
+        $('#TimoviContainer').jtable({
+            title: 'Timovi',
+            paging: true, //Enable paging
+            pageSize: 10, //Set page size (default: 10)
+            sorting: true, //Enable sorting
+            defaultSorting: 'Naziv ASC', //Set default sorting
+            actions: {
+                listAction: '/TimCRUD/TimoviList',
+                deleteAction: '/TimCRUD/Delete',
+                updateAction: '/TimCRUD/Update',
+                createAction: '/TimCRUD/Create'
+            },
+            fields: {
+                TimID: {
+                    key: true,
+                    create: false,
+                    edit: false,
+                    list: false
+                },
+                Naziv: {
+                    title: 'Naziv',
+                    width: '23%'
+                },
+                Grad: {
+                    title: 'Grad',
+                    width: '23%'
+                },
+                Stadion: {
+                    title: 'Stadion',
+                    width: '23%'
+                },
+                Trener: {
+                    title: 'Trener',
+                    width: '23%'
+                }
+            }
+        });
+        //Load student list from server
+        $('#TimoviContainer').jtable('load');
+    });
+
+    </script>
+}

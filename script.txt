@@ -1,0 +1,255 @@
+
+-- --------------------------------------------------
+-- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
+-- --------------------------------------------------
+-- Date Created: 02/18/2019 08:08:04
+-- Generated from EDMX file: C:\Users\Manus\source\repos\Rezultati\Rezultati\DBModels\RezultatiContext.edmx
+-- --------------------------------------------------
+
+SET QUOTED_IDENTIFIER OFF;
+GO
+USE [Rezultati];
+GO
+IF SCHEMA_ID(N'dbo') IS NULL EXECUTE(N'CREATE SCHEMA [dbo]');
+GO
+
+-- --------------------------------------------------
+-- Dropping existing FOREIGN KEY constraints
+-- --------------------------------------------------
+
+IF OBJECT_ID(N'[dbo].[FK_Igrac_Tim]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Igrac] DROP CONSTRAINT [FK_Igrac_Tim];
+GO
+IF OBJECT_ID(N'[dbo].[FK_Tabela_Tim]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Tabela] DROP CONSTRAINT [FK_Tabela_Tim];
+GO
+IF OBJECT_ID(N'[dbo].[FK_Ucinak_Igrac]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Ucinak] DROP CONSTRAINT [FK_Ucinak_Igrac];
+GO
+IF OBJECT_ID(N'[dbo].[FK_Ucinak_Utakmica]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Ucinak] DROP CONSTRAINT [FK_Ucinak_Utakmica];
+GO
+IF OBJECT_ID(N'[dbo].[FK_Utakmica_Tim]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Utakmica] DROP CONSTRAINT [FK_Utakmica_Tim];
+GO
+IF OBJECT_ID(N'[dbo].[FK_Utakmica_Tim1]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Utakmica] DROP CONSTRAINT [FK_Utakmica_Tim1];
+GO
+
+-- --------------------------------------------------
+-- Dropping existing tables
+-- --------------------------------------------------
+
+IF OBJECT_ID(N'[dbo].[Igrac]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Igrac];
+GO
+IF OBJECT_ID(N'[dbo].[Tabela]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Tabela];
+GO
+IF OBJECT_ID(N'[dbo].[Tim]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Tim];
+GO
+IF OBJECT_ID(N'[dbo].[Ucinak]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Ucinak];
+GO
+IF OBJECT_ID(N'[dbo].[Utakmica]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Utakmica];
+GO
+
+-- --------------------------------------------------
+-- Creating all tables
+-- --------------------------------------------------
+
+-- Creating table 'Igracs'
+CREATE TABLE [dbo].[Igracs] (
+    [IgracID] int IDENTITY(1,1) NOT NULL,
+    [Ime] nvarchar(50)  NOT NULL,
+    [Prezime] nvarchar(50)  NOT NULL,
+    [DatumRodjenja] datetime  NOT NULL,
+    [DrzavaRodjenja] nvarchar(50)  NOT NULL,
+    [GradRodjenja] nvarchar(50)  NOT NULL,
+    [BrojDresa] int  NOT NULL,
+    [Pozicija] nvarchar(50)  NOT NULL,
+    [TimID] int  NOT NULL
+);
+GO
+
+-- Creating table 'Tabelas'
+CREATE TABLE [dbo].[Tabelas] (
+    [TabelaID] int IDENTITY(1,1) NOT NULL,
+    [TimID] int  NOT NULL,
+    [BrojPobjeda] int  NULL,
+    [BrojPoraza] int  NULL,
+    [BrojNerjesenih] int  NULL,
+    [GolRazlika] int  NULL,
+    [BrojBodova] int  NULL
+);
+GO
+
+-- Creating table 'Tims'
+CREATE TABLE [dbo].[Tims] (
+    [TimID] int IDENTITY(1,1) NOT NULL,
+    [Naziv] nvarchar(50)  NOT NULL,
+    [Grad] nvarchar(50)  NOT NULL,
+    [Stadion] nvarchar(50)  NOT NULL,
+    [Trener] nvarchar(50)  NOT NULL
+);
+GO
+
+-- Creating table 'Utakmicas'
+CREATE TABLE [dbo].[Utakmicas] (
+    [UtakmicaID] int IDENTITY(1,1) NOT NULL,
+    [Datum] datetime  NOT NULL,
+    [Kolo] int  NOT NULL,
+    [DomaciTimID] int  NOT NULL,
+    [GostujuciTimID] int  NOT NULL,
+    [Odigrana] bit  NOT NULL,
+    [DomacinGolovi] int  NULL,
+    [GostGolovi] int  NULL,
+    [Traje] bit  NULL
+);
+GO
+
+-- Creating table 'Ucinaks'
+CREATE TABLE [dbo].[Ucinaks] (
+    [IgracID] int  NOT NULL,
+    [UtakmicaID] int  NOT NULL,
+    [OdigranihMinuta] int  NOT NULL,
+    [Golova] int  NOT NULL,
+    [ZutihKartona] int  NOT NULL,
+    [CrvenihKartona] int  NOT NULL,
+    [UcinakID] int IDENTITY(1,1) NOT NULL
+);
+GO
+
+-- --------------------------------------------------
+-- Creating all PRIMARY KEY constraints
+-- --------------------------------------------------
+
+-- Creating primary key on [IgracID] in table 'Igracs'
+ALTER TABLE [dbo].[Igracs]
+ADD CONSTRAINT [PK_Igracs]
+    PRIMARY KEY CLUSTERED ([IgracID] ASC);
+GO
+
+-- Creating primary key on [TabelaID] in table 'Tabelas'
+ALTER TABLE [dbo].[Tabelas]
+ADD CONSTRAINT [PK_Tabelas]
+    PRIMARY KEY CLUSTERED ([TabelaID] ASC);
+GO
+
+-- Creating primary key on [TimID] in table 'Tims'
+ALTER TABLE [dbo].[Tims]
+ADD CONSTRAINT [PK_Tims]
+    PRIMARY KEY CLUSTERED ([TimID] ASC);
+GO
+
+-- Creating primary key on [UtakmicaID] in table 'Utakmicas'
+ALTER TABLE [dbo].[Utakmicas]
+ADD CONSTRAINT [PK_Utakmicas]
+    PRIMARY KEY CLUSTERED ([UtakmicaID] ASC);
+GO
+
+-- Creating primary key on [UcinakID] in table 'Ucinaks'
+ALTER TABLE [dbo].[Ucinaks]
+ADD CONSTRAINT [PK_Ucinaks]
+    PRIMARY KEY CLUSTERED ([UcinakID] ASC);
+GO
+
+-- --------------------------------------------------
+-- Creating all FOREIGN KEY constraints
+-- --------------------------------------------------
+
+-- Creating foreign key on [TimID] in table 'Igracs'
+ALTER TABLE [dbo].[Igracs]
+ADD CONSTRAINT [FK_Igrac_Tim]
+    FOREIGN KEY ([TimID])
+    REFERENCES [dbo].[Tims]
+        ([TimID])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_Igrac_Tim'
+CREATE INDEX [IX_FK_Igrac_Tim]
+ON [dbo].[Igracs]
+    ([TimID]);
+GO
+
+-- Creating foreign key on [IgracID] in table 'Ucinaks'
+ALTER TABLE [dbo].[Ucinaks]
+ADD CONSTRAINT [FK_Ucinak_Igrac]
+    FOREIGN KEY ([IgracID])
+    REFERENCES [dbo].[Igracs]
+        ([IgracID])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_Ucinak_Igrac'
+CREATE INDEX [IX_FK_Ucinak_Igrac]
+ON [dbo].[Ucinaks]
+    ([IgracID]);
+GO
+
+-- Creating foreign key on [TimID] in table 'Tabelas'
+ALTER TABLE [dbo].[Tabelas]
+ADD CONSTRAINT [FK_Tabela_Tim]
+    FOREIGN KEY ([TimID])
+    REFERENCES [dbo].[Tims]
+        ([TimID])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_Tabela_Tim'
+CREATE INDEX [IX_FK_Tabela_Tim]
+ON [dbo].[Tabelas]
+    ([TimID]);
+GO
+
+-- Creating foreign key on [DomaciTimID] in table 'Utakmicas'
+ALTER TABLE [dbo].[Utakmicas]
+ADD CONSTRAINT [FK_Utakmica_Tim]
+    FOREIGN KEY ([DomaciTimID])
+    REFERENCES [dbo].[Tims]
+        ([TimID])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_Utakmica_Tim'
+CREATE INDEX [IX_FK_Utakmica_Tim]
+ON [dbo].[Utakmicas]
+    ([DomaciTimID]);
+GO
+
+-- Creating foreign key on [GostujuciTimID] in table 'Utakmicas'
+ALTER TABLE [dbo].[Utakmicas]
+ADD CONSTRAINT [FK_Utakmica_Tim1]
+    FOREIGN KEY ([GostujuciTimID])
+    REFERENCES [dbo].[Tims]
+        ([TimID])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_Utakmica_Tim1'
+CREATE INDEX [IX_FK_Utakmica_Tim1]
+ON [dbo].[Utakmicas]
+    ([GostujuciTimID]);
+GO
+
+-- Creating foreign key on [UtakmicaID] in table 'Ucinaks'
+ALTER TABLE [dbo].[Ucinaks]
+ADD CONSTRAINT [FK_Ucinak_Utakmica]
+    FOREIGN KEY ([UtakmicaID])
+    REFERENCES [dbo].[Utakmicas]
+        ([UtakmicaID])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_Ucinak_Utakmica'
+CREATE INDEX [IX_FK_Ucinak_Utakmica]
+ON [dbo].[Ucinaks]
+    ([UtakmicaID]);
+GO
+
+-- --------------------------------------------------
+-- Script has ended
+-- --------------------------------------------------

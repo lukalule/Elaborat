@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Rezultati.Models.TabelaViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Ukupni poredak</h2>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NazivTima)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BrPobijeda)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BrPoraza)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BrNerjesenih)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GolRazlika)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Bodovi)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NazivTima)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BrPobijeda)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BrPoraza)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BrNerjesenih)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GolRazlika)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Bodovi)
+        </td>
+        
+    </tr>
+}
+
+</table>

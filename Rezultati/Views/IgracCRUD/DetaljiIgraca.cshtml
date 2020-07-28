@@ -1,0 +1,107 @@
+﻿@model Rezultati.Models.IgracViewModel
+
+@{
+    ViewBag.Title = "DetaljiIgraca";
+}
+
+<h2>Detalji za igrača</h2>
+
+<div>
+    <h4>@Model.Ime @Model.Prezime</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Prezime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Prezime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DatumRodjenja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DatumRodjenja)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DrzavaRodjenja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DrzavaRodjenja)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GradRodjenja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GradRodjenja)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BrojDresa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BrojDresa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pozicija)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pozicija)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Tim")
+        </dt>
+
+        <dd>
+            @ViewBag.nazivTima
+        </dd>
+        <dt>
+            @Html.DisplayName("Postignutih golova")
+        </dt>
+
+        <dd>
+            @ViewBag.ukupnoGolova
+        </dd>
+        <dt>
+            @Html.DisplayName("Zutih kartona")
+        </dt>
+
+        <dd>
+            @ViewBag.ukupnoZutih
+        </dd>
+        <dt>
+            @Html.DisplayName("Crvenih kartona")
+        </dt>
+
+        <dd>
+            @ViewBag.ukupnoCrvenih
+        </dd>
+        <dt>
+            @Html.DisplayName("Minuta po utakmici")
+        </dt>
+
+        <dd>
+            @ViewBag.minutaza
+        </dd>
+
+    </dl>
+</div>

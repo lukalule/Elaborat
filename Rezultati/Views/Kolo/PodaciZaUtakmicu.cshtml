@@ -1,0 +1,82 @@
+﻿@model Rezultati.Models.IgraciNaUtakmiciViewModel
+
+@{
+    ViewBag.Title = "PodaciZaUtakmicu";
+}
+
+<h2>Izmijeni učinak</h2>
+
+<div class="container">
+    
+    <div class="row">
+        
+        <div class="col-xs-6 justify-content: left">
+
+            <table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayName("Dres")
+                    </th>
+                    <th>
+                        @Html.DisplayName("Ime")
+                    </th>
+                    <th>
+                        @Html.DisplayName("Prezime")
+                    </th>
+
+                </tr>
+
+                @foreach (var item in Model.IgraciDomacin)
+                {
+                <tr>
+                    <td>
+                        @Html.Display(item.BrojDresa.ToString())
+                    </td>
+                    <td>
+                        @Html.Display(item.Ime)
+                    </td>
+                    <td>
+                        @Html.Display(item.Prezime)
+                    </td>
+                </tr>
+                }
+
+            </table>
+        </div>
+        <div class="col-xs-6 justify-content: right">
+
+            <table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayName("Dres")
+                    </th>
+                    <th>
+                        @Html.DisplayName("Ime")
+                    </th>
+                    <th>
+                        @Html.DisplayName("Prezime")
+                    </th>
+
+                </tr>
+
+                @foreach (var item in Model.IgraciGost)
+                {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(item.BrojDresa.ToString())
+                    </td>
+                    <td>
+                        @Html.DisplayFor(item.Ime)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(item.Prezime)
+                    </td>
+                </tr>
+                }
+
+            </table>
+        </div>
+
+    </div>
+
+</div>

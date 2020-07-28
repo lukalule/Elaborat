@@ -1,0 +1,18 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2  style="font-family: 'Segoe UI'">Pregled utakmica po kolu</h2>
+
+@Html.DropDownList("Kola", ViewBag.optionsKola as List<SelectListItem>, "--Izaberi kolo--")
+<br />
+
+    <div id="koloContainer"></div>
+
+
+@section scripts{
+    <script src="~/Scripts/app/getUtakmiceZaKolo.js"></script>
+}
+

@@ -1,0 +1,237 @@
+﻿
+@model Rezultati.Models.IgraciNaUtakmiciViewModel
+
+<h2  style="font-family: 'Segoe UI'">Izmijeni učinak</h2>
+
+<div class="container"  style="font-family: 'Segoe UI'">
+
+    <div class="row">
+        <div class="col-xs-6 justify-content: text-left" style="font-size:18px;">@ViewBag.Domacin</div>
+        <div class="col-xs-6 justify-content: text-left" style="font-size:18px;">@ViewBag.Gost</div>
+
+    </div>
+    <div class="row">
+
+        <div class="col-xs-6 justify-content: left">
+
+            <table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayName("Ime")
+                    </th>
+                    <th>
+                        @Html.DisplayName("Prezime")
+                    </th>
+
+                </tr>
+
+                @foreach (var item in Model.IgraciDomacin)
+                {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Ime)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Prezime)
+                    </td>
+                    <td>
+                        <div id="btnIzmijeniDomacin">
+                            <input type="button" name="btnUcinak" value="Izmijeni učinak" data-toggle="modal" data-target="#izmijeniModal"
+                                   data-utakmicaid="@Model.UtakmicaID" data-igracid="@item.IgracID" data-igracime="@item.BrojDresa - @item.Ime  @item.Prezime"/>
+                        </div>
+                    </td>
+                </tr>
+                }
+
+            </table>
+        </div>
+        <div class="col-xs-6 justify-content: right">
+            <table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayName("Ime")
+                    </th>
+                    <th>
+                        @Html.DisplayName("Prezime")
+                    </th>
+
+                </tr>
+
+                @foreach (var item in Model.IgraciGost)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Ime)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Prezime)
+                        </td>
+                        <td>
+                            <div id="btnIzmijeniGost">
+                                <input type="button" name="btnUcinak" value="Izmijeni učinak" data-toggle="modal" data-target="#izmijeniModal"
+                                       data-utakmicaid="@Model.UtakmicaID" data-igracid="@item.IgracID" data-igracime="@item.BrojDresa - @item.Ime  @item.Prezime"/>
+                            </div>
+                        </td>
+                    </tr>
+                }
+
+            </table>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+    $('#btnIzmijeniDomacin input').click(function () {
+        var data = {
+            utakmicaid: $(this).attr('data-utakmicaid'),
+            igracid: $(this).attr('data-igracid')
+        };
+
+        $.get("/Kolo/NadjiUcinak", data, function (result) {
+
+            $('[name=idutakmica]').val(result.utakmicaid);
+            $('[name=idigrac]').val(result.igracid);
+            $('#minuta').val(result.minuta);
+            $('#golova').val(result.golova);
+            $('#zutih').val(result.zutih);
+            $('#crvenih').val(result.crvenih);
+        });
+
+
+    });
+
+    $('#btnIzmijeniGost input').click(function () {
+
+        var data = {
+            utakmicaid: $(this).attr('data-utakmicaid'),
+            igracid: $(this).attr('data-igracid')
+        };
+
+        $.get("/Kolo/NadjiUcinak", data, function (result) {
+
+            $('[name=idutakmica]').val(result.utakmicaid);
+            $('[name=idigrac]').val(result.igracid);
+            $('#minuta').val(result.minuta);
+            $('#golova').val(result.golova);
+            $('#zutih').val(result.zutih);
+            $('#crvenih').val(result.crvenih);
+        });
+    });
+</script>
+
+<div id="izmijeniModal" class="modal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Izmijeni učinak</h4>
+            </div>
+            <div class="modal-body container">
+
+
+
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+
+                <div class="form-horizontal">
+                    <input type="button" id="igracime" value="" data-jib=""/> 
+                    <hr />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                    @Html.Hidden("idutakmica")
+                    @Html.Hidden("idigrac")
+
+                    <div class="form-group">
+                        @Html.Label("Odigranih minuta", htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            <input type="number" min="0" id="minuta" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.Label("Broj golova", htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            <input type="number" min="0" id="golova" />
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.Label("Zutih kartona", htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            <input type="number" min="0" max="2" id="zutih" />
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.Label("Crvenih kartona", htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            <input type="number" min="0" max="1" id="crvenih" />
+                        </div>
+                    </div>
+
+                </div>
+                }
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="btnSave">Save</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script>
+    $('#igracime').click(function () {
+
+        var url = '/IgracCRUD/DetaljiIgraca/?igracid=' + $('#igracime').data('jib');
+        window.open(url, '_newtab');
+       
+        
+    });
+</script>
+
+<script>
+
+    $('#btnSave').click(function () {
+        var data = {
+            utakmicaid: $('[name=idutakmica]').val(),
+            igracid: $('[name=idigrac]').val(),
+            minuta: $('#minuta').val(),
+            golova: $('#golova').val(),
+            zutih: $('#zutih').val(),
+            crvenih: $('#crvenih').val()
+        };
+
+        $.post('/Kolo/PostUcinak', data); 
+        alert('Objekat je sačuvan!');
+        data = {
+            brKola: $('#Kola').val()
+        };        
+        
+        $.get('/Kolo/GetKolo', data, function (result) {
+
+            $('#koloContainer').html(result);
+        });           
+    });
+
+    $('[name=btnUcinak]').click(function () {
+
+        $('#igracime').val($(this).attr('data-igracime'));
+
+        $('#igracime').data('jib', $(this).attr('data-igracid'));
+    });
+
+    
+</script>

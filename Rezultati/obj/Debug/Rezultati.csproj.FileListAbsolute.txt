@@ -1,0 +1,351 @@
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\Rezultati.dll.config
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\Rezultati.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\Rezultati.pdb
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\csc.exe
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\csc.exe.config
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\csc.rsp
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\csi.exe
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\csi.exe.config
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\csi.rsp
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\System.AppContext.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\System.Console.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\System.IO.Compression.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\System.Security.Claims.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\System.ValueTuple.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\vbc.exe
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\vbc.exe.config
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\vbc.rsp
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\VBCSCompiler.exe
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\Antlr3.Runtime.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\EntityFramework.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\EntityFramework.SqlServer.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\Newtonsoft.Json.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\System.Linq.Dynamic.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\System.Web.Helpers.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\System.Web.Mvc.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\System.Web.Optimization.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\System.Web.Razor.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\System.Web.WebPages.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\System.Web.WebPages.Razor.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\WebGrease.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\EntityFramework.xml
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\EntityFramework.SqlServer.xml
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\System.Web.Helpers.xml
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\System.Web.Mvc.xml
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\System.Web.Optimization.xml
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\System.Web.Razor.xml
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\System.Web.WebPages.xml
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\System.Web.WebPages.Razor.xml
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\Newtonsoft.Json.xml
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\Antlr3.Runtime.pdb
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Manus\source\repos\Rezultati\Rezultati\obj\Debug\Rezultati.csproj.CoreCompileInputs.cache
+C:\Users\Manus\source\repos\Rezultati\Rezultati\obj\Debug\Rezultati.csproj.CopyComplete
+C:\Users\Manus\source\repos\Rezultati\Rezultati\obj\Debug\Rezultati.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\obj\Debug\Rezultati.pdb
+C:\Users\Manus\source\repos\Rezultati\Rezultati\obj\Debug\Rezultati.csprojAssemblyReference.cache
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\Rezultati.dll.config
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\Rezultati.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\Rezultati.pdb
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\csc.exe
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\csc.exe.config
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\csc.rsp
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\csi.exe
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\csi.exe.config
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\csi.rsp
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\System.AppContext.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\System.Console.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\System.IO.Compression.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\System.IO.Pipes.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\System.Security.Claims.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\System.ValueTuple.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\System.Xml.XPath.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\vbc.exe
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\vbc.exe.config
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\vbc.rsp
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\VBCSCompiler.exe
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\Antlr3.Runtime.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\EntityFramework.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\EntityFramework.SqlServer.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\Newtonsoft.Json.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\System.Linq.Dynamic.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\System.Web.Helpers.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\System.Web.Mvc.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\System.Web.Optimization.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\System.Web.Razor.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\System.Web.WebPages.Deployment.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\System.Web.WebPages.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\System.Web.WebPages.Razor.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\WebGrease.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\EntityFramework.xml
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\EntityFramework.SqlServer.xml
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\System.Web.Helpers.xml
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\System.Web.Mvc.xml
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\System.Web.Optimization.xml
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\System.Web.Razor.xml
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\System.Web.WebPages.xml
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\System.Web.WebPages.Deployment.xml
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\System.Web.WebPages.Razor.xml
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\Newtonsoft.Json.xml
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\Antlr3.Runtime.pdb
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\obj\Debug\Rezultati.csprojAssemblyReference.cache
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\obj\Debug\Rezultati.csproj.CoreCompileInputs.cache
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\obj\Debug\Rezultati.csproj.CopyComplete
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\obj\Debug\Rezultati.dll
+C:\Users\luka.nanic\Desktop\Rezultati\Rezultati\obj\Debug\Rezultati.pdb
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\Rezultati.dll.config
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\Rezultati.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\Rezultati.pdb
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\csc.exe
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\csc.exe.config
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\csc.rsp
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\csi.exe
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\csi.exe.config
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\csi.rsp
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\System.AppContext.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\System.Console.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\System.IO.Compression.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\System.Security.Claims.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\System.ValueTuple.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\vbc.exe
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\vbc.exe.config
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\vbc.rsp
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\VBCSCompiler.exe
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\Antlr3.Runtime.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\EntityFramework.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\EntityFramework.SqlServer.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\Newtonsoft.Json.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\System.Linq.Dynamic.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\System.Web.Helpers.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\System.Web.Mvc.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\System.Web.Optimization.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\System.Web.Razor.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\System.Web.WebPages.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\System.Web.WebPages.Razor.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\WebGrease.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\EntityFramework.xml
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\EntityFramework.SqlServer.xml
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\System.Web.Helpers.xml
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\System.Web.Mvc.xml
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\System.Web.Optimization.xml
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\System.Web.Razor.xml
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\System.Web.WebPages.xml
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\System.Web.WebPages.Razor.xml
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\Newtonsoft.Json.xml
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\Antlr3.Runtime.pdb
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\Manus\Desktop\Rezultati\Rezultati\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Manus\Desktop\Rezultati\Rezultati\obj\Debug\Rezultati.csprojAssemblyReference.cache
+C:\Users\Manus\Desktop\Rezultati\Rezultati\obj\Debug\Rezultati.csproj.CoreCompileInputs.cache
+C:\Users\Manus\Desktop\Rezultati\Rezultati\obj\Debug\Rezultati.csproj.CopyComplete
+C:\Users\Manus\Desktop\Rezultati\Rezultati\obj\Debug\Rezultati.dll
+C:\Users\Manus\Desktop\Rezultati\Rezultati\obj\Debug\Rezultati.pdb
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\System.Net.Http.Formatting.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\System.Web.Http.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\System.Web.Http.WebHost.dll
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\System.Net.Http.Formatting.xml
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\System.Web.Http.xml
+C:\Users\Manus\source\repos\Rezultati\Rezultati\bin\System.Web.Http.WebHost.xml
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\Rezultati.dll.config
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\Rezultati.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\Rezultati.pdb
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\csc.exe
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\csc.exe.config
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\csc.rsp
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\csi.exe
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\csi.exe.config
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\csi.rsp
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\System.AppContext.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\System.Console.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\System.IO.Compression.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\System.IO.Pipes.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\System.Security.Claims.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\System.ValueTuple.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\System.Xml.XPath.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\vbc.exe
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\vbc.exe.config
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\vbc.rsp
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\VBCSCompiler.exe
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\Antlr3.Runtime.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\EntityFramework.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\EntityFramework.SqlServer.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\Newtonsoft.Json.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\System.Linq.Dynamic.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\System.Net.Http.Formatting.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\System.Web.Helpers.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\System.Web.Http.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\System.Web.Http.WebHost.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\System.Web.Mvc.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\System.Web.Optimization.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\System.Web.Razor.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\System.Web.WebPages.Deployment.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\System.Web.WebPages.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\System.Web.WebPages.Razor.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\WebGrease.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\EntityFramework.xml
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\EntityFramework.SqlServer.xml
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\System.Net.Http.Formatting.xml
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\System.Web.Http.xml
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\System.Web.Http.WebHost.xml
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\System.Web.Helpers.xml
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\System.Web.Mvc.xml
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\System.Web.Optimization.xml
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\System.Web.Razor.xml
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\System.Web.WebPages.xml
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\System.Web.WebPages.Deployment.xml
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\System.Web.WebPages.Razor.xml
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\Newtonsoft.Json.xml
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\Antlr3.Runtime.pdb
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\obj\Debug\Rezultati.csprojAssemblyReference.cache
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\obj\Debug\Rezultati.csproj.CopyComplete
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\obj\Debug\Rezultati.dll
+C:\Users\luka.nanic\Documents\A\C Source\Repos\Rezultati\Rezultati\obj\Debug\Rezultati.pdb

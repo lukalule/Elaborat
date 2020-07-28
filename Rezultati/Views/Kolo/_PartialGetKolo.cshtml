@@ -1,0 +1,268 @@
+﻿@model IEnumerable<Rezultati.Models.UtakmicaViewModel>
+
+<style>
+
+    .my-row {
+        border: 1px solid red;
+        margin: 3px;
+    }
+
+    .utakmicaTile {
+        background: linear-gradient(gray, white);
+        color: #333;
+        font-weight: 600;
+        font-family: 'Segoe UI';
+        font-size: 15px;
+    }
+
+        .utakmicaTile:hover {
+            border-color: #666 #aaa #bbb #888;
+            border-width: 4px 3px 3px 4px;
+            color: #000;
+        }
+
+    .podaciTile {
+        background: linear-gradient(0.25turn, purple, white, purple);
+        color: #333;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+        .podaciTile:hover {
+            border-color: #666 #aaa #bbb #888;
+            border-width: 4px 3px 3px 4px;
+            color: #000;
+        }
+</style>
+
+
+<div class="container" style="font-family: 'Segoe UI'">
+
+    <div id="prikazUtakmica">
+        @{int i = 0; }
+        @foreach (var utakmica in Model)
+        {
+            if (utakmica.Traje || utakmica.Odigrana)
+            {
+                if (!utakmica.Odigrana)
+                {
+                    <div class="row">
+                        <div class="col-xs-10">
+                            <div class="row my-row utakmicaTile" style="background: linear-gradient(darkseagreen, white)" data-utakmicaid="@utakmica.UtakmicaID"
+                                 name="utakmicaIzListe" data-toggle="modal" data-target="#detaljiModal">
+                                <div style="margin-top:6px;">
+                                    <div class="col-xs-12 justify-content: text-left"><p> @utakmica.Datum.Day.@utakmica.Datum.Month.@utakmica.Datum.Year </p></div>
+                                    <div class="col-xs-12 justify-content: text-left"><p> Početak: @utakmica.Datum.Hour:00 </p></div>
+                                </div>
+                                <br />
+                                <div class="col-xs-5 justify-content: text-right">@ViewBag.listaImena[i].Domacin</div>
+                                <div class="col-xs-2 justify-content: text-center">@utakmica.DomacinGolovi - @utakmica.GostGolovi</div>
+                                <div class="col-xs-5 justify-content: text-left">@ViewBag.listaImena[i++].Gost</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-2" style="background: orange; height:91px; width:160px; margin-top:2px">
+                            <input type="button" name="toggleOdigrana" value="Završi utakmicu" style="background: orangered; width:130px; height:88px"
+                                   data-utakmicaid="@utakmica.UtakmicaID" />
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div class="row">
+                        <div class="col-xs-10">
+                            <div class="row my-row utakmicaTile" style="background: linear-gradient(orangered, white)" data-utakmicaid="@utakmica.UtakmicaID" name="utakmicaIzListe"
+                                 data-toggle="modal" data-target="#detaljiModal">
+                                <div style="margin-top:6px;">
+                                    <div class="col-xs-12 justify-content: text-left"><p> @utakmica.Datum.Day.@utakmica.Datum.Month.@utakmica.Datum.Year </p></div>
+                                    <div class="col-xs-12 justify-content: text-left"><p> Početak: @utakmica.Datum.Hour:00 </p></div>
+                                </div>
+                                <br />
+                                <div class="col-xs-5 justify-content: text-right">@ViewBag.listaImena[i].Domacin</div>
+                                <div class="col-xs-2 justify-content: text-center">@utakmica.DomacinGolovi - @utakmica.GostGolovi</div>
+                                <div class="col-xs-5 justify-content: text-left">@ViewBag.listaImena[i++].Gost</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-2" style="background: orange; height:91px; width:160px; margin-top:2px">
+                            <input type="button" name="toggleOdigrana" value="Nastavi" style="background: darkseagreen; width:130px; height:88px"
+                                   data-utakmicaid="@utakmica.UtakmicaID" />
+                        </div>
+                    </div>
+                }
+
+                <div class="row">
+                    <div class="row podaciTile justify-content: text-center" data-utakmicaid="@utakmica.UtakmicaID" name="btnIzmijeni">
+                        Izmijeni podatke o utakmici
+                    </div>
+                </div>
+
+            }
+            else
+            {
+                <div class="row my-row utakmicaTile" data-utakmicaid="@utakmica.UtakmicaID" name="utakmicaIzListe" data-toggle="modal" data-target="#detaljiModal">
+                    <div style="margin-top:6px;">
+                        <div class="col-xs-12 justify-content: text-left"><p> @utakmica.Datum.Day.@utakmica.Datum.Month.@utakmica.Datum.Year </p></div>
+                        <div class="col-xs-12 justify-content: text-left"><p> Početak: @utakmica.Datum.Hour:00 </p></div>
+                    </div>
+                    <br />
+                    <div class="col-xs-5 justify-content: text-right">@ViewBag.listaImena[i].Domacin</div>
+                    <div class="col-xs-2 justify-content: text-center"> - </div>
+                    <div class="col-xs-5 justify-content: text-left">@ViewBag.listaImena[i++].Gost</div>
+                </div>
+
+                <div class="row podaciTile justify-content: text-center" data-utakmicaid="@utakmica.UtakmicaID" name="btnZapocni">
+                    Započni utakmicu
+                </div>
+            }
+
+
+        }
+    </div>
+
+</div>
+
+<script>
+    $('#prikazUtakmica [name=toggleOdigrana]').click(function () {
+        var data = {
+            utakmicaid: $(this).data('utakmicaid')
+        };
+        $.post('/Kolo/ZavrsiUtakmicu', data);
+        alert('Stanje utakmice promijenjeno!');
+
+        data = {
+            brKola: $('#Kola').val()
+        };
+        $.get('/Kolo/GetKolo', data, function (result) {
+
+            $('#koloContainer').html(result);
+        });  
+    });
+
+</script>
+
+
+<div id="izmjene">   </div>
+
+<script>
+    $('#prikazUtakmica [name=btnIzmijeni]').on('click', function () {
+
+        var data = {
+            utakmicaid: $(this).attr('data-utakmicaid')
+        };
+
+        $.get('/Kolo/PodaciZaUtakmicu', data, function (result) {
+
+            $('#izmjene').html(result);
+        });
+    });
+
+
+    $('#prikazUtakmica [name=btnZapocni]').on('click', function () {
+
+        var data = {
+            utakmicaid: $(this).attr('data-utakmicaid')
+        };
+        $.post('/Kolo/ZapocniUtakmicu', data);
+
+        alert('Utakmica počinje!');
+        data = {
+            brKola: $('#Kola').val()
+        };
+        $.get('/Kolo/GetKolo', data, function (result) {
+
+            $('#koloContainer').html(result);
+        });
+    });
+</script>
+
+<script>
+    $('#prikazUtakmica [name=utakmicaIzListe]').on('click', function () {
+
+        var data = {
+            utakmicaid: $(this).attr('data-utakmicaid')
+        };
+
+        $.get('/Kolo/DetaljiUtakmice', data, function (result) {
+
+            $('#datum').text(result.datum);
+            $('#grad').text(result.grad);
+            $('#stadion').text(result.stadion);
+            $('#domacin').text(result.domacin);
+            $('#gost').text(result.gost);
+            $('#strijelci').empty();
+            $.each(result.strijelci, function (index, string) {
+                $("#strijelci").append('<li>' + string + '</li>');
+
+            });
+        });
+    });
+</script>
+
+
+<div id="detaljiModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Detalji utakmice</h4>
+            </div>
+            <div class="modal-body container">
+
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+
+                <div class="form-horizontal">
+
+                    <hr />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                    <div class="form-group">
+                        @Html.Label("Datum", htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10" id="datum" style="padding-top: 2px">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.Label("Grad", htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10" id="grad" style="padding-top: 2px">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.Label("Stadion", htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10" id="stadion" style="padding-top: 2px">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.Label("Domaćin", htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10" id="domacin" style="padding-top: 2px">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.Label("Gosti", htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10" id="gost" style="padding-top: 2px">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <ul id="strijelci">
+                            
+                        </ul>
+                    </div>
+
+                </div>
+                }
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="btnSave">Save</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>

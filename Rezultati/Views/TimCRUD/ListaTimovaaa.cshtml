@@ -1,0 +1,50 @@
+﻿@model IEnumerable<Rezultati.Models.TimViewModel>
+
+@{
+    ViewBag.Title = "ListaTimovaaa";
+}
+
+<h2>ListaTimovaaa</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TimID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Naziv)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Grad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Stadion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Trener)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TimID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Naziv)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Grad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Stadion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Trener)
+        </td>
+    </tr>
+}
+
+</table>

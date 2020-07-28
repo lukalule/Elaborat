@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RezultatiModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Igrac">
+    <Key>
+      <PropertyRef Name="IgracID" />
+    </Key>
+    <Property Name="IgracID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ime" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Prezime" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DatumRodjenja" Type="date" Nullable="false" />
+    <Property Name="DrzavaRodjenja" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="GradRodjenja" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="BrojDresa" Type="int" Nullable="false" />
+    <Property Name="Pozicija" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TimID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tabela">
+    <Key>
+      <PropertyRef Name="TabelaID" />
+    </Key>
+    <Property Name="TabelaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TimID" Type="int" Nullable="false" />
+    <Property Name="BrojPobjeda" Type="int" />
+    <Property Name="BrojPoraza" Type="int" />
+    <Property Name="BrojNerjesenih" Type="int" />
+    <Property Name="GolRazlika" Type="int" />
+    <Property Name="BrojBodova" Type="int" />
+  </EntityType>
+  <EntityType Name="Tim">
+    <Key>
+      <PropertyRef Name="TimID" />
+    </Key>
+    <Property Name="TimID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Naziv" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Grad" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Stadion" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Trener" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Ucinak">
+    <Key>
+      <PropertyRef Name="UcinakID" />
+    </Key>
+    <Property Name="UcinakID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IgracID" Type="int" Nullable="false" />
+    <Property Name="UtakmicaID" Type="int" Nullable="false" />
+    <Property Name="OdigranihMinuta" Type="int" Nullable="false" />
+    <Property Name="Golova" Type="int" Nullable="false" />
+    <Property Name="ZutihKartona" Type="int" Nullable="false" />
+    <Property Name="CrvenihKartona" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Utakmica">
+    <Key>
+      <PropertyRef Name="UtakmicaID" />
+    </Key>
+    <Property Name="UtakmicaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Datum" Type="datetime" Nullable="false" />
+    <Property Name="Kolo" Type="int" Nullable="false" />
+    <Property Name="DomaciTimID" Type="int" Nullable="false" />
+    <Property Name="GostujuciTimID" Type="int" Nullable="false" />
+    <Property Name="DomacinGolovi" Type="int" />
+    <Property Name="GostGolovi" Type="int" />
+    <Property Name="Traje" Type="bit" />
+    <Property Name="Odigrana" Type="bit" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Igrac_Tim">
+    <End Role="Tim" Type="Self.Tim" Multiplicity="1" />
+    <End Role="Igrac" Type="Self.Igrac" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tim">
+        <PropertyRef Name="TimID" />
+      </Principal>
+      <Dependent Role="Igrac">
+        <PropertyRef Name="TimID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tabela_Tim">
+    <End Role="Tim" Type="Self.Tim" Multiplicity="1" />
+    <End Role="Tabela" Type="Self.Tabela" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tim">
+        <PropertyRef Name="TimID" />
+      </Principal>
+      <Dependent Role="Tabela">
+        <PropertyRef Name="TimID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ucinak_Igrac">
+    <End Role="Igrac" Type="Self.Igrac" Multiplicity="1" />
+    <End Role="Ucinak" Type="Self.Ucinak" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Igrac">
+        <PropertyRef Name="IgracID" />
+      </Principal>
+      <Dependent Role="Ucinak">
+        <PropertyRef Name="IgracID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ucinak_Utakmica">
+    <End Role="Utakmica" Type="Self.Utakmica" Multiplicity="1" />
+    <End Role="Ucinak" Type="Self.Ucinak" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Utakmica">
+        <PropertyRef Name="UtakmicaID" />
+      </Principal>
+      <Dependent Role="Ucinak">
+        <PropertyRef Name="UtakmicaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Utakmica_Tim">
+    <End Role="Tim" Type="Self.Tim" Multiplicity="1" />
+    <End Role="Utakmica" Type="Self.Utakmica" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tim">
+        <PropertyRef Name="TimID" />
+      </Principal>
+      <Dependent Role="Utakmica">
+        <PropertyRef Name="DomaciTimID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Utakmica_Tim1">
+    <End Role="Tim" Type="Self.Tim" Multiplicity="1" />
+    <End Role="Utakmica" Type="Self.Utakmica" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tim">
+        <PropertyRef Name="TimID" />
+      </Principal>
+      <Dependent Role="Utakmica">
+        <PropertyRef Name="GostujuciTimID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="RezultatiModelStoreContainer">
+    <EntitySet Name="Igrac" EntityType="Self.Igrac" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tabela" EntityType="Self.Tabela" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tim" EntityType="Self.Tim" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ucinak" EntityType="Self.Ucinak" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Utakmica" EntityType="Self.Utakmica" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Igrac_Tim" Association="Self.FK_Igrac_Tim">
+      <End Role="Tim" EntitySet="Tim" />
+      <End Role="Igrac" EntitySet="Igrac" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tabela_Tim" Association="Self.FK_Tabela_Tim">
+      <End Role="Tim" EntitySet="Tim" />
+      <End Role="Tabela" EntitySet="Tabela" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ucinak_Igrac" Association="Self.FK_Ucinak_Igrac">
+      <End Role="Igrac" EntitySet="Igrac" />
+      <End Role="Ucinak" EntitySet="Ucinak" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ucinak_Utakmica" Association="Self.FK_Ucinak_Utakmica">
+      <End Role="Utakmica" EntitySet="Utakmica" />
+      <End Role="Ucinak" EntitySet="Ucinak" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Utakmica_Tim" Association="Self.FK_Utakmica_Tim">
+      <End Role="Tim" EntitySet="Tim" />
+      <End Role="Utakmica" EntitySet="Utakmica" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Utakmica_Tim1" Association="Self.FK_Utakmica_Tim1">
+      <End Role="Tim" EntitySet="Tim" />
+      <End Role="Utakmica" EntitySet="Utakmica" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

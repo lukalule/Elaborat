@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RezultatiModelStoreContainer" CdmEntityContainer="RezultatiContext">
+    <EntitySetMapping Name="Igracs">
+      <EntityTypeMapping TypeName="RezultatiModel.Igrac">
+        <MappingFragment StoreEntitySet="Igrac">
+          <ScalarProperty Name="IgracID" ColumnName="IgracID" />
+          <ScalarProperty Name="Ime" ColumnName="Ime" />
+          <ScalarProperty Name="Prezime" ColumnName="Prezime" />
+          <ScalarProperty Name="DatumRodjenja" ColumnName="DatumRodjenja" />
+          <ScalarProperty Name="DrzavaRodjenja" ColumnName="DrzavaRodjenja" />
+          <ScalarProperty Name="GradRodjenja" ColumnName="GradRodjenja" />
+          <ScalarProperty Name="BrojDresa" ColumnName="BrojDresa" />
+          <ScalarProperty Name="Pozicija" ColumnName="Pozicija" />
+          <ScalarProperty Name="TimID" ColumnName="TimID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tabelas">
+      <EntityTypeMapping TypeName="RezultatiModel.Tabela">
+        <MappingFragment StoreEntitySet="Tabela">
+          <ScalarProperty Name="TabelaID" ColumnName="TabelaID" />
+          <ScalarProperty Name="TimID" ColumnName="TimID" />
+          <ScalarProperty Name="BrojPobjeda" ColumnName="BrojPobjeda" />
+          <ScalarProperty Name="BrojPoraza" ColumnName="BrojPoraza" />
+          <ScalarProperty Name="BrojNerjesenih" ColumnName="BrojNerjesenih" />
+          <ScalarProperty Name="GolRazlika" ColumnName="GolRazlika" />
+          <ScalarProperty Name="BrojBodova" ColumnName="BrojBodova" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tims">
+      <EntityTypeMapping TypeName="RezultatiModel.Tim">
+        <MappingFragment StoreEntitySet="Tim">
+          <ScalarProperty Name="TimID" ColumnName="TimID" />
+          <ScalarProperty Name="Naziv" ColumnName="Naziv" />
+          <ScalarProperty Name="Grad" ColumnName="Grad" />
+          <ScalarProperty Name="Stadion" ColumnName="Stadion" />
+          <ScalarProperty Name="Trener" ColumnName="Trener" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Utakmicas">
+      <EntityTypeMapping TypeName="RezultatiModel.Utakmica">
+        <MappingFragment StoreEntitySet="Utakmica">
+          <ScalarProperty Name="Traje" ColumnName="Traje" />
+          <ScalarProperty Name="GostGolovi" ColumnName="GostGolovi" />
+          <ScalarProperty Name="DomacinGolovi" ColumnName="DomacinGolovi" />
+          <ScalarProperty Name="UtakmicaID" ColumnName="UtakmicaID" />
+          <ScalarProperty Name="Datum" ColumnName="Datum" />
+          <ScalarProperty Name="Kolo" ColumnName="Kolo" />
+          <ScalarProperty Name="DomaciTimID" ColumnName="DomaciTimID" />
+          <ScalarProperty Name="GostujuciTimID" ColumnName="GostujuciTimID" />
+          <ScalarProperty Name="Odigrana" ColumnName="Odigrana" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ucinaks">
+      <EntityTypeMapping TypeName="RezultatiModel.Ucinak">
+        <MappingFragment StoreEntitySet="Ucinak">
+          <ScalarProperty Name="UcinakID" ColumnName="UcinakID" />
+          <ScalarProperty Name="IgracID" ColumnName="IgracID" />
+          <ScalarProperty Name="UtakmicaID" ColumnName="UtakmicaID" />
+          <ScalarProperty Name="OdigranihMinuta" ColumnName="OdigranihMinuta" />
+          <ScalarProperty Name="Golova" ColumnName="Golova" />
+          <ScalarProperty Name="ZutihKartona" ColumnName="ZutihKartona" />
+          <ScalarProperty Name="CrvenihKartona" ColumnName="CrvenihKartona" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div id="IgraciContainer">dasds</div>
+@section scripts{
+
+    <script type="text/javascript">
+
+    $(document).ready(function () {
+
+        $('#IgraciContainer').jtable({
+            title: 'Timovi',
+            paging: true, //Enable paging
+            pageSize: 10, //Set page size (default: 10)
+            sorting: true, //Enable sorting
+            defaultSorting: 'Ime ASC Prezime ASC', //Set default sorting
+            actions: {
+                listAction: '/IgracCRUD/IgraciList',
+                deleteAction: '/IgracCRUD/Delete',
+                updateAction: '/IgracCRUD/Update',
+                createAction: '/IgracCRUD/Create'
+            },
+            fields: {
+                IgracID: {
+                    key: true,
+                    create: false,
+                    edit: false,
+                    list: false
+                },
+                Ime: {
+                    title: 'Ime',
+                    width: '10%'
+                },
+                Prezime: {
+                    title: 'Prezime',
+                    width: '10%'
+                },
+                DatumRodjenja: {
+                    title: 'Datum rođenja',
+                    width: '13%',
+                    type: 'date',
+                    displayFormat: 'yy-mm-dd'
+                },
+                BrojDresa: {
+                    title: 'Broj dresa',
+                    width: '10%'
+                },
+                Pozicija: {
+                    title: 'Pozicija',
+                    width: '10%'
+                },
+                TimID: {
+                    title: 'Tim',
+                    width: '18%',
+                    options: '/IgracCRUD/GetTimOptions'
+                },
+                GradRodjenja: {
+                    title: 'Grad rođenja',
+                    width: '15%'
+                },
+                DrzavaRodjenja: {
+                    title: 'Država rođenja',
+                    width: '15%'
+                }
+            }
+        });
+        //Load student list from server
+        $('#IgraciContainer').jtable('load');
+    });
+
+    </script>
+}
